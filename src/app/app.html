@@ -5,7 +5,10 @@
 
   <section class="productos-grid">
     @for (producto of productos; track producto.id) {
-    <app-producto-card [producto]="producto" (agregar)="agregarAlCarrito($event)">
+    <app-producto-card 
+      [producto]="producto" 
+      [destacado]="esDestacado(producto.precio)"
+      (agregar)="agregarAlCarrito($event)">
     </app-producto-card>
     }
   </section>

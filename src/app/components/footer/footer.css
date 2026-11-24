@@ -1,0 +1,39 @@
+/* Estilos del contenedor principal */
+.footer {
+  background-color: rgb(100, 165, 190);
+  color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: 45px;
+  border-top: 3px solid rgb(93, 155, 155);
+  font-family: Arial, sans-serif;
+}
+
+/* Párrafo del copyright */
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Contenedor de enlaces */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* Estilo de los enlaces */
+.footer-links a {
+  color: #2360a1;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+.footer-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

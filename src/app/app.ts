@@ -63,10 +63,22 @@ export class App {
       emoji: '📷',
       precio: 75,
       stock: 0
+    },
+    {
+      id: '7',
+      nombre: 'Laptop Gamer',
+      categoria: 'Computadoras',
+      emoji: '💻',
+      precio: 1200,
+      stock: 3
     }
   ];
 
   agregarAlCarrito(producto: Producto): void {
     console.log("agregado")
+  }
+
+  esDestacado(precio: number): boolean {
+    return precio > 1000;
   }
 }

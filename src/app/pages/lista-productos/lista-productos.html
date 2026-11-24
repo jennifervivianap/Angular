@@ -1,0 +1,14 @@
+<div class="contenedor">
+  <h2>Nuestros Productos</h2>
+  
+  <div class="grilla-productos">
+    <!-- Iterar sobre la lista de productos -->
+    @for (producto of productos(); track producto.id) {
+      <app-producto-card 
+        [producto]="producto"
+        [destacado]="esDestacado(producto.precio)"
+        (agregar)="agregarAlCarrito($event)">
+      </app-producto-card>
+    }
+  </div>
+</div>

@@ -7,10 +7,33 @@
     flex-direction: column;
     gap: 0.4rem;
     transition: background-color 0.2s, transform 0.2s;
+    position: relative;
 }
 
 card:hover {
     transform: translate(-3px);
+}
+
+/* Estilo para tarjetas destacadas */
+.card.destacado {
+    border: 3px solid #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    background-color: #fffef5;
+}
+
+/* Etiqueta "⭐ Destacado" usando ::before */
+.card.destacado::before {
+    content: "⭐ Destacado";
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background-color: #ffd700;
+    color: #333;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .emoji {

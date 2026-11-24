@@ -18,6 +18,9 @@ export interface Producto {
 export class ProductoCard {
   // Recibir producto desde el componente padre
   producto = input.required<Producto>();
+  
+  // Input opcional para destacar la tarjeta (por defecto false)
+  destacado = input<boolean>(false);
 
   // Emitir evento al componente padre
   agregar = output<Producto>();
